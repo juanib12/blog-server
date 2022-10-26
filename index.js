@@ -16,7 +16,7 @@ app.use(express.json());
 // origin: ["https://techfix-demo.vercel.app", "https://techfix-app.vercel.app", "https://techfix-orden.vercel.app", "http://localhost:3000"],
 
 const corsOptions = {
-  origin: ["https://cisheycode.vercel.app", "https://cisheycode-add.vercel.app"],
+  origin: '*',
   credentials: true,
 };
 
