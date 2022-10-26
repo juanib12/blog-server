@@ -13,9 +13,10 @@ mongoose.connect(process.env.MONGO);
 app.use(require("express").urlencoded({ extended: true }));
 app.use(express.json());
 
+// origin: ["https://techfix-demo.vercel.app", "https://techfix-app.vercel.app", "https://techfix-orden.vercel.app", "http://localhost:3000"],
 
 const corsOptions = {
-  origin: "https://cisheycode.vercel.app",
+  origin: ["https://cisheycode.vercel.app", "https://cisheycode-add.vercel.app"],
   credentials: true,
 };
 
