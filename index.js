@@ -13,9 +13,9 @@ mongoose.connect(process.env.MONGO);
 app.use(require("express").urlencoded({ extended: true }));
 app.use(express.json());
 
-// origin: "https://cisheycode.vercel.app",
+
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://cisheycode.vercel.app"],
+  origin: "https://cisheycode.vercel.app",
   credentials: true,
 };
 
